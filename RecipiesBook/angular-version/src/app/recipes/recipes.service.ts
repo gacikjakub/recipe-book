@@ -21,8 +21,6 @@ export class RecipesService {
         new Ingredient('Meat', 1),
         new Ingredient('French Fries', 10)])];
 
-  public recipeSelection = new EventEmitter<Recipe>();
-
   constructor(private shoppingListService: ShoppingListService) {
   }
 

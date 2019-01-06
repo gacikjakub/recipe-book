@@ -1,0 +1,8 @@
+.error__name {
+  color: red;
+  font-size: 20px;
+}
+
+input[type=number].ng-invalid{
+  border-color: red;
+}

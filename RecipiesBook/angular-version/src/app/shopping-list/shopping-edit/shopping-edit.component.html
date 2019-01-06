@@ -1,24 +1,51 @@
 <section class="row">
   <div class="col-xs-12">
-     <form>
-       <div class="row">
-         <div class="col-sm-5 form-group">
-         <label for="name">Name</label>
-           <input type="text" id="name" class="form-control" #nameIngredientInput>
-         </div>
-         <div class="col-sm-2 form-group">
-            <label for="amount">Amount</label>
-           <input type="number" id="amount" class="form-control" #amountIngredientInput/>
-         </div>
-       </div>
-         <div class="row">
-           <div class="col-xs-12">
-             <button class="btn btn-success" (click)="onIngredientAdded()" type="button">Add</button>
-             <button class="btn btn-danger" type="button">Delete</button>
-             <button class="btn btn-primary" type="button">Clear</button>
-           </div>
-         </div>
-     </form>
+    <form #ingredientsForm="ngForm">
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            class="form-control"
+            [ngModel]="formIngredient.name"
+            name="name"
+            required
+            #ingredientName="ngModel">
+          <h3 class="error__name" *ngIf="!ingredientName.valid && ingredientName.touched">Name cannot be empty</h3>
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            class="form-control"
+            [ngModel]="formIngredient.amount"
+            name="amount"
+            pattern="^[1-9]+[1-9]*$"
+            min="1"
+          />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <button class="btn btn-success"
+                  (click)="onIngredientAdded(ingredientsForm.value)"
+                  [disabled]="ingredientsForm.invalid"
+                  type="button">Add
+          </button>
+          <button class="btn btn-danger"
+                  (click)="onIngredientDeleted(ingredientsForm.value)"
+                  [disabled]="ingredientsForm.invalid"
+                  type="button">Delete
+          </button>
+          <button class="btn btn-primary"
+                  (click)="onIngredientCleared(ingredientsForm)"
+                  type="button">Clear
+          </button>
+        </div>
+      </div>
+    </form>
   </div>
 </section>
 
