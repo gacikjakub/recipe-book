@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {RecipesService} from '../../recipes.service';
+import {Recipe} from '../../recipe.model';
 
 @Component({
   selector: 'app-select-recipe-detail',
@@ -6,10 +8,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./select-recipe-detail.component.css']
 })
 export class SelectRecipeDetailComponent implements OnInit {
+  shouldDisplay = false;
 
-  constructor() { }
-
-  ngOnInit() {
+  constructor(private recipeService: RecipesService) {
   }
 
+  ngOnInit() {
+    this.shouldDisplay = this.recipeService.getRecipes().length !== 0;
+    this.recipeService.recipesUpdate.subscribe((recipes: Recipe[]) =>
+      this.shouldDisplay = recipes.length !== 0);
+  }
 }
