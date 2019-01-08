@@ -35,13 +35,9 @@
                   type="button">Add
           </button>
           <button class="btn btn-danger"
-                  (click)="onIngredientDeleted(ingredientsForm.value)"
+                  (click)="onIngredientDeleted(ingredientsForm)"
                   [disabled]="ingredientsForm.invalid"
                   type="button">Delete
-          </button>
-          <button class="btn btn-primary"
-                  (click)="onIngredientCleared(ingredientsForm)"
-                  type="button">Clear
           </button>
         </div>
       </div>

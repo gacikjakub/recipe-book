@@ -2,7 +2,7 @@ import {Component, OnDestroy, OnInit} from '@angular/core';
 import {ShoppingListService} from '../shopping-list.service';
 import {Ingredient} from '../../shared/ingredient.model';
 import {NgForm} from '@angular/forms';
-import {Subscription} from "rxjs";
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-shopping-edit',
@@ -13,12 +13,15 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
   selectedIngredientChangeSubscription: Subscription;
   formIngredient = new Ingredient('', 1);
 
+
   constructor(private shoppingListService: ShoppingListService) {
   }
 
   ngOnInit(): void {
     this.selectedIngredientChangeSubscription = this.shoppingListService.ingredientSelectionChange
-      .subscribe(selectedIngredient => this.formIngredient = {...selectedIngredient});
+      .subscribe(selectedIngredient => {
+        this.formIngredient = {...selectedIngredient};
+      });
   }
 
   ngOnDestroy(): void {
@@ -29,12 +32,8 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
     this.shoppingListService.addToIngredients(ingredient);
   }
 
-  onIngredientDeleted(ingredient: Ingredient) {
-    this.shoppingListService.deleteIngredient(ingredient);
-  }
-
-  onIngredientCleared(ingredientsForm: NgForm) {
+  onIngredientDeleted(ingredientsForm: NgForm) {
+    this.shoppingListService.deleteIngredient(ingredientsForm.value);
     ingredientsForm.reset();
-    ingredientsForm.form.patchValue({amount: 1});
   }
 }
