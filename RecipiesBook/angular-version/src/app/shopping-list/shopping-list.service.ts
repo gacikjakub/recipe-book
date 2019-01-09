@@ -18,6 +18,7 @@ export class ShoppingListService {
   private findIngredientPredicate = flag => paramIngredient => arrayIngredient => {
     return ({...paramIngredient}.name.toLocaleLowerCase() === {...arrayIngredient}.name.toLocaleLowerCase()) === flag;
   }
+
   constructor(private router: Router, private route: ActivatedRoute) {
   }
 
@@ -27,12 +28,18 @@ export class ShoppingListService {
 
   addToIngredients(ingredient: Ingredient) {
     const ingredientIndex = _.findIndex(this.ingredients, this.findIngredientPredicate(true)(ingredient));
-    this.ingredients[ingredientIndex === -1 ? this.ingredients.length : ingredientIndex ] = {...ingredient};
+    this.ingredients[ingredientIndex === -1 ? this.ingredients.length : ingredientIndex] = {...ingredient};
     this.ingredientsChange.next([...this.ingredients]);
   }
 
   addAllIngredients(ingredients: Ingredient[]) {
-    this.ingredients.push(...ingredients);
+    ingredients.forEach(ingredient => {
+      const ingredientIndex = _.findIndex(this.ingredients, this.findIngredientPredicate(true)(ingredient));
+      ingredientIndex === -1 ?
+        this.ingredients.push(ingredient)
+        :
+        this.ingredients[ingredientIndex].amount += ingredient.amount;
+    });
     this.ingredientsChange.next([...ingredients]);
     this.router.navigate(['shopping-list'], {relativeTo: this.route});
   }

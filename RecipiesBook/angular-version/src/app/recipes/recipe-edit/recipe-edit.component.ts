@@ -58,7 +58,10 @@ export class RecipeEditComponent implements OnInit {
   onIngredientAdded() {
     (<FormArray>this.recipeForm.get('ingredients')).push(this.createIngredientFormGroup());
   }
-
+  onDeleteIngredient(index: number) {
+    (<FormArray>this.recipeForm.get('ingredients')).removeAt(index);
+    this.recipeForm.markAsDirty();
+  }
   saveRecipe() {
     this.editMode ? this.recipeService.updateRecipe({
         ...{id: this.id},
@@ -77,7 +80,7 @@ export class RecipeEditComponent implements OnInit {
     return new FormGroup(
       {
         'name': new FormControl(name, Validators.required),
-        'amount': new FormControl(amount, Validators.pattern(/^[1-9]\d*$/)),
+        'amount': new FormControl(amount, [Validators.required, Validators.pattern(/^[1-9]\d*$/)]),
       });
   }
 }
