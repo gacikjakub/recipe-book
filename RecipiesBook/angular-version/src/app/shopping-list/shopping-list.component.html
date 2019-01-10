@@ -5,8 +5,8 @@
     <ul class="list-group">
       <a
         class="list-group-item"
-        *ngFor="let ingredient of ingredients"
-      (click)="onIngredientSelected(ingredient)">
+        *ngFor="let ingredient of ingredients | filter:'name':filterStatus "
+        (click)="onIngredientSelected(ingredient)">
         {{ingredient.name}} {{ingredient.amount}}
       </a>
     </ul>

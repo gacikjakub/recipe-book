@@ -13,6 +13,8 @@ export class ShoppingListService {
   ];
   ingredientsChange = new Subject<Ingredient[]>();
 
+  ingredientInputChange = new Subject<string>();
+
   ingredientSelectionChange = new Subject<Ingredient>();
 
   private findIngredientPredicate = flag => paramIngredient => arrayIngredient => {

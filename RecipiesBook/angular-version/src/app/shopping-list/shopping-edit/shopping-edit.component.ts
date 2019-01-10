@@ -21,6 +21,7 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
     this.selectedIngredientChangeSubscription = this.shoppingListService.ingredientSelectionChange
       .subscribe(selectedIngredient => {
         this.formIngredient = {...selectedIngredient};
+        this.onIngredientInputChange(this.formIngredient.name);
       });
   }
 
@@ -35,5 +36,9 @@ export class ShoppingEditComponent implements OnInit, OnDestroy {
   onIngredientDeleted(ingredientsForm: NgForm) {
     this.shoppingListService.deleteIngredient(ingredientsForm.value);
     ingredientsForm.reset();
+  }
+
+  onIngredientInputChange(inputValue: string) {
+    this.shoppingListService.ingredientInputChange.next(inputValue);
   }
 }

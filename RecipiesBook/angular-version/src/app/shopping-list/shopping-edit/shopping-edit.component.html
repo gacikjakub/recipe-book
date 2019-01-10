@@ -9,6 +9,7 @@
             id="name"
             class="form-control"
             [ngModel]="formIngredient.name"
+            (ngModelChange)="onIngredientInputChange(ingredientName.value)"
             name="name"
             required
             #ingredientName="ngModel">
