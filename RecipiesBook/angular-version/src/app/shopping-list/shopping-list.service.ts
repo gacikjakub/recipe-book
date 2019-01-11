@@ -6,11 +6,8 @@ import * as _ from 'lodash';
 
 @Injectable()
 export class ShoppingListService {
-  private ingredients = [
-    new Ingredient('Apples', 5),
-    new Ingredient('Tomatoes', 15),
-    new Ingredient('Potatoes', 7),
-  ];
+  private ingredients: Ingredient[] = [];
+
   ingredientsChange = new Subject<Ingredient[]>();
 
   ingredientInputChange = new Subject<string>();
@@ -53,5 +50,10 @@ export class ShoppingListService {
 
   selectIngredient(ingredient: Ingredient) {
     this.ingredientSelectionChange.next(ingredient);
+  }
+
+  setIngredients(ingredients: Ingredient[]) {
+    this.ingredients = [...ingredients];
+    this.ingredientsChange.next(this.getIngredients());
   }
 }
