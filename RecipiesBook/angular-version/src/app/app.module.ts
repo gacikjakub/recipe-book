@@ -16,6 +16,8 @@ import {SelectRecipeDetailComponent} from './recipes/recipe-detail/select-recipe
 import {RecipeEditComponent} from './recipes/recipe-edit/recipe-edit.component';
 import { FilterPipe } from './shared/filter.pipe';
 import {HttpClientModule} from '@angular/common/http';
+import { SignupComponent } from './auth/signup/signup.component';
+import { SigninComponent } from './auth/signin/signin.component';
 
 @NgModule({
   declarations: [
@@ -30,7 +32,9 @@ import {HttpClientModule} from '@angular/common/http';
     DropdownDirective,
     SelectRecipeDetailComponent,
     RecipeEditComponent,
-    FilterPipe
+    FilterPipe,
+    SignupComponent,
+    SigninComponent
   ],
   imports: [
     BrowserModule,
