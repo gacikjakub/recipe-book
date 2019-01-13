@@ -19,14 +19,14 @@ export class AuthService {
   }
 
   ['Sing In'](email: string, password: string) {
-    return firebase.auth().signInWithEmailAndPassword(email, password).then(() => {
+    return firebase.auth().signInWithEmailAndPassword(email, password).then(response => {
       this.authenticationChange.next(true);
     });
   }
 
   getToken(): Promise<string> {
     const currentUser = firebase.auth().currentUser;
-    return currentUser ? currentUser.getIdToken() : Promise.resolve(null);
+    return currentUser ? currentUser.getIdToken(true) : Promise.resolve(null);
   }
 
   isAuthenticated(): Promise<boolean> {

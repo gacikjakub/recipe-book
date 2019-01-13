@@ -14,10 +14,10 @@ import {DropdownDirective} from './shared/dropdown.directive';
 import {AppRoutingModule} from './app.routing.module';
 import {SelectRecipeDetailComponent} from './recipes/recipe-detail/select-recipe-detail/select-recipe-detail.component';
 import {RecipeEditComponent} from './recipes/recipe-edit/recipe-edit.component';
-import { FilterPipe } from './shared/filter.pipe';
-import {HttpClientModule} from '@angular/common/http';
-import { SignupComponent } from './auth/signup/signup.component';
-import { SigninComponent } from './auth/signin/signin.component';
+import {FilterPipe} from './shared/filter.pipe';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import {SignComponent} from './auth/sign/sign.component';
+import {AuthenticationInterceptor} from "./shared/authentication-interceptor";
 
 @NgModule({
   declarations: [
@@ -33,8 +33,7 @@ import { SigninComponent } from './auth/signin/signin.component';
     SelectRecipeDetailComponent,
     RecipeEditComponent,
     FilterPipe,
-    SignupComponent,
-    SigninComponent
+    SignComponent,
   ],
   imports: [
     BrowserModule,
@@ -43,7 +42,7 @@ import { SigninComponent } from './auth/signin/signin.component';
     AppRoutingModule,
     HttpClientModule,
   ],
-  providers: [],
+  providers: [{provide: HTTP_INTERCEPTORS, useClass: AuthenticationInterceptor , multi: true}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
