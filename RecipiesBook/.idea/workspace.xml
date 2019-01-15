@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="f74518d3-91a6-44d8-8985-0de71c627a62" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-edit/shopping-edit.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-edit/shopping-edit.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-edit/shopping-edit.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-edit/shopping-edit.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/angular-version/src/app/app.routing.module.ts" beforeDir="false" afterPath="$PROJECT_DIR$/angular-version/src/app/app.routing.module.ts" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -30,34 +28,117 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-edit/shopping-edit.component.html">
+        <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.service.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="145">
-              <caret line="34" column="35" lean-forward="true" selection-start-line="34" selection-start-column="35" selection-end-line="34" selection-end-column="35" />
+            <state relative-caret-position="452">
+              <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
+              <folding>
+                <element signature="e#0#54#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-edit/shopping-edit.component.ts">
+        <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="340">
+              <caret line="20" column="31" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="31" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-version/src/app/app.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="242">
+              <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+              <folding>
+                <element signature="e#0#56#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-version/src/app/core/core.module.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
-              <caret line="31" column="33" lean-forward="true" selection-start-line="31" selection-start-column="33" selection-end-line="31" selection-end-column="33" />
+              <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
               <folding>
-                <element signature="e#0#59#0" expanded="true" />
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipes-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.service.ts">
+        <entry file="file://$PROJECT_DIR$/angular-version/src/app/app.routing.module.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="243">
-              <caret line="29" column="98" selection-start-line="29" selection-start-column="98" selection-end-line="29" selection-end-column="98" />
+            <state relative-caret-position="136">
+              <caret line="8" column="126" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="126" />
               <folding>
-                <element signature="e#0#54#0" expanded="true" />
+                <element signature="e#0#53#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipes.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+              <folding>
+                <element signature="e#0#39#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-version/src/app/auth/auth-guard.service.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="276">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+              <folding>
+                <element signature="e#0#41#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/angular-version/src/app/auth/auth-routing.module.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" selection-start-line="17" selection-end-line="17" />
             </state>
           </provider>
         </entry>
@@ -69,6 +150,7 @@
       <find>appDr</find>
       <find>href=</find>
       <find>form</find>
+      <find>Jestem</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -77,47 +159,57 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/angular-version/angular.json" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/shared/ingredient.model.ts" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/shared/tabs.type.ts" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/shared/dropdown.directive.ts" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe.service.ts" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/shopping-list/ShoppingListService.ts" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes-item/recipes-item.component.css" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes-detail/recipes-detail.component.html" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/header/header.component.ts" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes-detail/recipes-detail.component.css" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes-item/recipes-item.component.ts" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes-item/recipes-item.component.html" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes-detail/recipes-detail.component.ts" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes.component.html" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe-detail/recipe-detail.component.css" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe-item/recipe-item.component.html" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/app.routing.module.ts" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes-list/recipes-list.component.html" />
         <option value="$PROJECT_DIR$/angular-version/src/app/app.component.html" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/header/header.component.html" />
         <option value="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.component.ts" />
         <option value="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.component.html" />
         <option value="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.component.css" />
         <option value="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-edit/shopping-edit.component.css" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/app.module.ts" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe-edit/recipe-edit.component.css" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes-list/recipes-list.component.ts" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe.model.ts" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes.component.ts" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/app.component.ts" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe-edit/recipe-edit.component.html" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe-item/recipe-item.component.css" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe-detail/recipe-detail.component.ts" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe-edit/recipe-edit.component.ts" />
-        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes.service.ts" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe-detail/recipe-detail.component.html" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe-detail/select-recipe-detail/select-recipe-detail.component.ts" />
         <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipe-detail/select-recipe-detail/select-recipe-detail.component.html" />
         <option value="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-edit/shopping-edit.component.html" />
         <option value="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-edit/shopping-edit.component.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/header/header.component.css" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/shared/data-storage.service.ts" />
         <option value="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.service.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes.service.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/auth/signup/signup.component.html" />
+        <option value="$PROJECT_DIR$/angular-version/src/auth/signup/signup.component.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/auth/signup/signup.component.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/auth/signup/sign.component.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/auth/signup/signup.component.html" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/auth/sign/sign.component.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/auth/sign/sign.component.html" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/auth/sign/sign.component.css" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/app.component.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/header/header.component.html" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/header/header.component.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/auth/auth.service.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/shared/authentication-interceptor.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes.module.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/shared/shared.module.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.module.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/auth/auth-routing.module.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/auth/auth.module.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/core/home/home.component.html" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/core/home/home.component.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/core/core.module.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/app.module.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/auth/auth-guard.service.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/recipes/recipes-routing.module.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list-routing.module.ts" />
+        <option value="$PROJECT_DIR$/angular-version/src/app/app.routing.module.ts" />
       </list>
     </option>
   </component>
@@ -164,7 +256,40 @@
               <item name="angular-version" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="shopping-list" type="462c0819:PsiDirectoryNode" />
+              <item name="auth" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RecipiesBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RecipiesBook" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-version" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RecipiesBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RecipiesBook" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-version" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="core" type="462c0819:PsiDirectoryNode" />
+              <item name="home" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RecipiesBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RecipiesBook" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-version" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="recipes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="RecipiesBook" type="b2602c69:ProjectViewProjectNode" />
+              <item name="RecipiesBook" type="462c0819:PsiDirectoryNode" />
+              <item name="angular-version" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="app" type="462c0819:PsiDirectoryNode" />
+              <item name="shared" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="RecipiesBook" type="b2602c69:ProjectViewProjectNode" />
@@ -173,20 +298,19 @@
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="app" type="462c0819:PsiDirectoryNode" />
               <item name="shopping-list" type="462c0819:PsiDirectoryNode" />
-              <item name="shopping-edit" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1546911781706" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1547598916011" />
     <property name="editor.config.ad.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../observables-final" />
     <property name="node.js.detected.package.tslint" value="true" />
@@ -197,11 +321,15 @@
     <property name="ts.external.directory.path" value="C:\Users\Lukasz_Jedrzejewski\IdeaProjects\FE-Frameworks-Playground\RecipiesBook\angular-version\node_modules\typescript\lib" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Lukasz_Jedrzejewski\IdeaProjects\FE-Frameworks-Playground\RecipiesBook\angular-version\src\app\auth" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Lukasz_Jedrzejewski\IdeaProjects\FE-Frameworks-Playground\RecipiesBook\angular-version\src\app\recipes\recipes-detail" />
-      <recent name="C:\Users\Lukasz_Jedrzejewski\IdeaProjects\FE-Frameworks-Playground\RecipiesBook\angular-version\src\app\shared" />
-      <recent name="C:\Users\Lukasz_Jedrzejewski\IdeaProjects\FE-Frameworks-Playground\RecipiesList\angular-version\src\app\recipes" />
-      <recent name="C:\Users\Lukasz_Jedrzejewski\IdeaProjects\FE-Frameworks-Playground\RecipiesList\angular-version\src\app" />
+      <recent name="C:\Users\Lukasz_Jedrzejewski\IdeaProjects\FE-Frameworks-Playground\RecipiesBook\angular-version\src\app\core" />
+      <recent name="C:\Users\Lukasz_Jedrzejewski\IdeaProjects\FE-Frameworks-Playground\RecipiesBook\angular-version\src\app\auth" />
+      <recent name="C:\Users\Lukasz_Jedrzejewski\IdeaProjects\FE-Frameworks-Playground\RecipiesBook\angular-version\src\app\shopping-list" />
+      <recent name="C:\Users\Lukasz_Jedrzejewski\IdeaProjects\FE-Frameworks-Playground\RecipiesBook\angular-version\src\app\recipes" />
+      <recent name="C:\Users\Lukasz_Jedrzejewski\IdeaProjects\FE-Frameworks-Playground\RecipiesBook\angular-version\src\app" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -237,7 +365,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="107468000" />
+    <option name="totallyTimeSpent" value="184924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -249,9 +377,9 @@
       <window_info id="Favorites" order="3" side_tool="true" />
       <window_info id="Learn" order="4" />
       <window_info id="Designer" order="5" />
-      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.28993288" />
+      <window_info content_ui="combo" id="Project" order="6" visible="true" weight="0.30201343" />
       <window_info id="Structure" order="7" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.7624161" visible="true" weight="0.26912183" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="0" sideWeight="0.7624161" visible="true" weight="0.27620396" />
       <window_info anchor="bottom" id="Docker" order="1" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="2" sideWeight="0.23758389" side_tool="true" weight="0.3838527" />
       <window_info anchor="bottom" id="Database Changes" order="3" />
@@ -283,96 +411,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/angular-version/angular.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="358">
-          <caret line="25" column="62" selection-start-line="25" selection-start-column="62" selection-end-line="25" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/shared/ingredient.model.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/tslint.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/shared/tabs.type.ts" />
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/shared/dropdown.directive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/header/header.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="2" selection-start-column="40" selection-end-line="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/node_modules/typescript/lib/lib.es2015.core.d.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipe-item/recipe-item.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" selection-start-line="10" selection-end-line="10" />
-          <folding>
-            <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/app.routing.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
-          <caret line="13" column="52" selection-start-line="13" selection-start-column="52" selection-end-line="13" selection-end-column="52" />
-          <folding>
-            <element signature="e#0#53#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/app.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="11" selection-start-column="11" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/header/header.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="29" selection-start-line="3" selection-start-column="29" selection-end-line="3" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="128">
-          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
-          <folding>
-            <element signature="e#0#59#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.component.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-edit/shopping-edit.component.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="85">
@@ -385,16 +423,6 @@
         <state>
           <folding>
             <element signature="e#0#47#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/app.module.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="34" column="24" selection-start-line="34" selection-start-column="24" selection-end-line="34" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -417,23 +445,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state>
           <caret column="33" selection-start-column="33" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/app.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="51" lean-forward="true" selection-start-line="8" selection-start-column="51" selection-end-line="8" selection-end-column="51" />
-          <folding>
-            <element signature="e#0#40#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipes.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="41" selection-start-column="40" selection-end-line="10" />
         </state>
       </provider>
     </entry>
@@ -475,30 +486,6 @@
           <folding>
             <element signature="e#0#48#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipes.service.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="55" column="47" selection-start-line="55" selection-start-column="47" selection-end-line="55" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipes.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="21" lean-forward="true" selection-start-column="21" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipe-detail/recipe-detail.component.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" column="27" lean-forward="true" selection-start-line="22" selection-start-column="27" selection-end-line="22" selection-end-column="27" />
         </state>
       </provider>
     </entry>
@@ -567,12 +554,272 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipe-detail/recipe-detail.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="27" selection-start-line="10" selection-start-column="27" selection-end-line="10" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/core/header/header.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" lean-forward="true" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="15" column="29" selection-start-line="15" selection-start-column="29" selection-end-line="15" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4">
+          <caret line="15" column="48" lean-forward="true" selection-start-line="15" selection-start-column="48" selection-end-line="15" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/app.component.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/shared/data-storage.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="344">
+          <caret line="27" column="38" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/auth/sign/sign.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/auth/sign/sign.component.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="2" selection-start-column="2" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/auth/sign/sign.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-13">
+          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
+          <folding>
+            <element signature="e#0#48#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/core/header/header.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="44" selection-start-line="21" selection-start-column="44" selection-end-line="21" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/core/header/header.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+          <folding>
+            <element signature="e#0#59#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/shared/authentication-interceptor.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="3" selection-start-line="14" selection-start-column="3" selection-end-line="14" selection-end-column="3" />
+          <folding>
+            <element signature="e#0#90#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/auth/auth.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="22" column="42" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="42" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/shared/shared.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="14" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipes.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="378">
+          <caret line="49" column="31" selection-start-line="49" selection-start-column="31" selection-end-line="49" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/app.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="47" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/app.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="11" selection-start-column="11" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipes.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="41" selection-start-column="40" selection-end-line="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipes.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="21" selection-start-column="21" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/auth/auth.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="44" selection-start-line="4" selection-start-column="44" selection-end-line="4" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/core/home/home.component.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/core/home/home.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" selection-start-line="8" selection-end-line="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/core/core.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipes.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="26" column="25" lean-forward="true" selection-start-line="26" selection-start-column="25" selection-end-line="26" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.service.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="243">
-          <caret line="29" column="98" selection-start-line="29" selection-start-column="98" selection-end-line="29" selection-end-column="98" />
+        <state relative-caret-position="452">
+          <caret line="55" column="39" selection-start-line="55" selection-start-column="39" selection-end-line="55" selection-end-column="39" />
           <folding>
             <element signature="e#0#54#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="31" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="31" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/auth/auth-guard.service.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="276">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/auth/auth-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/recipes/recipes-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/shopping-list/shopping-list-routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="45" selection-start-line="5" selection-start-column="45" selection-end-line="5" selection-end-column="45" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/app.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="16" column="17" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding>
+            <element signature="e#0#56#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/angular-version/src/app/app.routing.module.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="126" selection-start-line="8" selection-start-column="99" selection-end-line="8" selection-end-column="126" />
+          <folding>
+            <element signature="e#0#53#0" expanded="true" />
           </folding>
         </state>
       </provider>
