@@ -10,7 +10,7 @@ export const httpOptions = {
   })
 }
 
-const appRoutes: Routes = [
+export const appRoutes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'recipes', loadChildren: './recipes/recipes.module#RecipesModule'},
   {path: 'shopping-list', loadChildren: './shopping-list/shopping-list.module#ShoppingListModule'}
@@ -18,7 +18,8 @@ const appRoutes: Routes = [
 
 @NgModule({
   imports: [
-    RouterModule.forRoot(appRoutes, {preloadingStrategy: PreloadAllModules})
+    RouterModule.forRoot(appRoutes, {preloadingStrategy: PreloadAllModules}),
+    // RouterModule.forRoot(appRoutes, {onSameUrlNavigation: 'reload'})
   ],
   exports: [RouterModule]
 })

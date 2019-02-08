@@ -5,7 +5,7 @@ import {SelectRecipeDetailComponent} from './recipe-detail/select-recipe-detail/
 import {RecipeEditComponent} from './recipe-edit/recipe-edit.component';
 import {RecipeDetailComponent} from './recipe-detail/recipe-detail.component';
 
-const recipesRoutes: Routes = [
+export const recipesRoutes: Routes = [
   {
     path: '', component: RecipesComponent, children: [
       {path: '', component: SelectRecipeDetailComponent},

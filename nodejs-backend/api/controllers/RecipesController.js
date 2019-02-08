@@ -36,24 +36,24 @@ exports.read_a_recipe = function(req, res) {
     });
 };
 
-//
-// exports.update_a_task = function(req, res) {
-//     Task.findOneAndUpdate({_id: req.params.taskId}, req.body, {new: true}, function(err, task) {
-//         if (err)
-//             res.send(err);
-//         res.json(task);
-//     });
-// };
-//
-//
-// exports.delete_a_task = function(req, res) {
-//
-//
-//     Task.remove({
-//         _id: req.params.taskId
-//     }, function(err, task) {
-//         if (err)
-//             res.send(err);
-//         res.json({ message: 'Task successfully deleted' });
-//     });
-// };
+
+exports.update_a_recipe = function(req, res) {
+    Recipe.findOneAndUpdate({_id: req.params.recipeId}, req.body, {new: true}, function(err, recipe) {
+        if (err)
+            res.send(err);
+        console.log('PUT recipe with id:' + req.params.recipeId + '\n' + recipe);
+        res.json(recipe);
+    });
+};
+
+
+exports.delete_a_recipe = function(req, res) {
+    Recipe.remove({
+        _id: req.params.recipeId
+    }, function(err, recipe) {
+        if (err)
+            res.send(err);
+        console.log('DELETE recipe with id:' + req.params.recipeId + '\n' + recipe);
+        res.json({ message: 'Recipe successfully deleted' });
+    });
+};

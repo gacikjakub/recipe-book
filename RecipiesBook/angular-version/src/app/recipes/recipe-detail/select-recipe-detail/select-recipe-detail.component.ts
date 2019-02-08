@@ -15,7 +15,7 @@ export class SelectRecipeDetailComponent implements OnInit {
 
   ngOnInit() {
     // this.shouldDisplay = this.recipeService.getRecipes().length !== 0;
-    this.recipeService.recipesUpdate.subscribe((recipes: Recipe[]) =>
+    this.recipeService.getRecipes().subscribe(recipes =>
       this.shouldDisplay = recipes.length !== 0);
   }
 }

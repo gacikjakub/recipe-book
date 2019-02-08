@@ -9,7 +9,7 @@ module.exports = function(app) {
 
 
     app.route('/recipes/:recipeId')
-        .get(recipes.read_a_recipe);
-        // .put(recipes.update_a_task)
-        // .delete(recipes.delete_a_task);
+        .get(recipes.read_a_recipe)
+        .put(recipes.update_a_recipe)
+        .delete(recipes.delete_a_recipe);
 };
