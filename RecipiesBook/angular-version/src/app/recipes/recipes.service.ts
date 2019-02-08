@@ -2,12 +2,15 @@ import {Recipe} from './recipe.model';
 import {Injectable} from '@angular/core';
 import {Ingredient} from '../shared/ingredient.model';
 import {ShoppingListService} from '../shopping-list/shopping-list.service';
-import {Subject} from 'rxjs';
+import {Observable, Subject} from 'rxjs';
+import {HttpClient} from '@angular/common/http';
+import {DATABASE_URL, httpOptions} from '../app.routing.module';
+import {map} from 'rxjs/operators';
 
 @Injectable({providedIn: 'root'})
 export class RecipesService {
 
-  constructor(private shoppingListService: ShoppingListService) {
+  constructor(private shoppingListService: ShoppingListService, private httpClient: HttpClient) {
   }
 
   recipesUpdate = new Subject<Recipe[]>();
@@ -19,8 +22,15 @@ export class RecipesService {
   }();
   private recipes: Recipe[] = [];
 
-  getRecipes(): Recipe[] {
-    return [...this.recipes];
+  private extractData(res: Response) {
+    const body = res;
+    return body || { };
+  }
+
+  getRecipes(): Observable<any> {
+    return this.httpClient.get(DATABASE_URL + '/recipes').pipe(
+      map(this.extractData)
+    );
   }
 
   getRecipeById(id: number): Recipe {
@@ -28,18 +38,22 @@ export class RecipesService {
   }
 
   addRecipe(recipe: Recipe) {
-    this.recipes = [...this.recipes, {...recipe, ...{id: this.idGenerator.next().value}}];
-    this.recipesUpdate.next(this.getRecipes());
+    const newRecipe = {... recipe, ...{id: this.idGenerator.next().value}};
+    this.recipes = [...this.recipes, newRecipe];
+    const response = this.httpClient.post<any>(DATABASE_URL + '/recipes', newRecipe, httpOptions);
+    response.subscribe(res => console.log(res));
+    return response;
   }
 
   updateRecipe(recipe: Recipe) {
+    const newRecipe = {... recipe, ...{id: this.idGenerator.next().value}};
+    this.httpClient.put<any>(DATABASE_URL + '/recipes', newRecipe, httpOptions);
     this.recipes[this.recipes.findIndex(rec => rec.id === recipe.id)] = {...recipe};
-    this.recipesUpdate.next(this.getRecipes());
   }
 
   deleteRecipe(id: number) {
     this.recipes = this.recipes.filter(recipe => recipe.id !== id);
-    this.recipesUpdate.next(this.getRecipes());
+    // this.recipesUpdate.next(this.getRecipes());
   }
 
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
@@ -48,6 +62,6 @@ export class RecipesService {
 
   setRecipes(recipes: Recipe[]) {
     this.recipes = [...recipes];
-    this.recipesUpdate.next(this.getRecipes());
+    // this.recipesUpdate.next(this.getRecipes());
   }
 }
