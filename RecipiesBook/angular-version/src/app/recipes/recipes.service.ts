@@ -33,14 +33,18 @@ export class RecipesService {
     );
   }
 
-  getRecipeById(id: number): Recipe {
-    return {...this.recipes.find(recipe => recipe.id === id)};
+  getRecipeById(id: string): Observable<any> {
+    // return {...this.recipes.find(recipe => recipe.id === id)};
+    console.log('_id: ' + id);
+    return this.httpClient.get(DATABASE_URL + '/recipes/' + id).pipe(
+      map(this.extractData)
+    );
   }
 
   addRecipe(recipe: Recipe) {
-    const newRecipe = {... recipe, ...{id: this.idGenerator.next().value}};
-    this.recipes = [...this.recipes, newRecipe];
-    const response = this.httpClient.post<any>(DATABASE_URL + '/recipes', newRecipe, httpOptions);
+    // const newRecipe = {... recipe, ...{id: this.idGenerator.next().value}};
+    // this.recipes = [...this.recipes, newRecipe];
+    const response = this.httpClient.post<any>(DATABASE_URL + '/recipes', recipe  , httpOptions);
     response.subscribe(res => console.log(res));
     return response;
   }
@@ -48,11 +52,11 @@ export class RecipesService {
   updateRecipe(recipe: Recipe) {
     const newRecipe = {... recipe, ...{id: this.idGenerator.next().value}};
     this.httpClient.put<any>(DATABASE_URL + '/recipes', newRecipe, httpOptions);
-    this.recipes[this.recipes.findIndex(rec => rec.id === recipe.id)] = {...recipe};
+    this.recipes[this.recipes.findIndex(rec => rec._id === recipe._id)] = {...recipe};
   }
 
   deleteRecipe(id: number) {
-    this.recipes = this.recipes.filter(recipe => recipe.id !== id);
+    // this.recipes = this.recipes.filter(recipe => recipe._id !== id);
     // this.recipesUpdate.next(this.getRecipes());
   }
 

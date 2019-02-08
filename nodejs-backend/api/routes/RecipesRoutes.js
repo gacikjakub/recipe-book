@@ -8,8 +8,8 @@ module.exports = function(app) {
         .post(recipes.create_a_recipe);
 
 
-    // app.route('/recipes/:recipeId')
-    //     .get(recipes.read_a_task)
-    //     .put(recipes.update_a_task)
-    //     .delete(recipes.delete_a_task);
+    app.route('/recipes/:recipeId')
+        .get(recipes.read_a_recipe);
+        // .put(recipes.update_a_task)
+        // .delete(recipes.delete_a_task);
 };

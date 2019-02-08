@@ -8,9 +8,8 @@ exports.list_all_recipes = function(req, res) {
     Recipe.find({}, function(err, recipe) {
         if (err)
             res.send(err);
-        var response = res.json(recipe);
         console.log('GET recipes: \n' + recipe);
-        return response;
+        res.json(recipe);
     });
 };
 
@@ -22,21 +21,21 @@ exports.create_a_recipe = function(req, res) {
     new_recipe.save(function(err, recipe) {
         if (err)
             res.send(err);
-        var response = res.json(recipe);
         console.log('POST recipe: \n' + recipe);
-        return response;
+        res.json(recipe);
     });
 };
 
 
-// exports.read_a_task = function(req, res) {
-//     Task.findById(req.params.taskId, function(err, task) {
-//         if (err)
-//             res.send(err);
-//         res.json(task);
-//     });
-// };
-//
+exports.read_a_recipe = function(req, res) {
+    Recipe.findById(req.params.recipeId, function(err, recipe) {
+        if (err)
+            res.send(err);
+        console.log('GET recipe with id:' + req.params.recipeId + '\n' + recipe);
+        res.json(recipe);
+    });
+};
+
 //
 // exports.update_a_task = function(req, res) {
 //     Task.findOneAndUpdate({_id: req.params.taskId}, req.body, {new: true}, function(err, task) {

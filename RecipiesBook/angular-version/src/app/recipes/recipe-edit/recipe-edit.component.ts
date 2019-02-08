@@ -19,20 +19,21 @@ export class RecipeEditComponent implements OnInit {
 
   ngOnInit() {
     this.route.params.subscribe((params: Params) => {
-      this.id = +params['id'];
+      this.id = params['id'];
       this.editMode = params['id'] != null;
 
-      this.initForm(+params['id']);
+      this.initForm(params['id']);
     });
   }
 
-  private initForm(id: number) {
+  private initForm(id: string) {
     let recipeName = '';
     let recipeDescription = '';
     let ingredients = [];
 
     if (this.editMode) {
-      const recipe = this.recipeService.getRecipeById(id);
+      let recipe;
+      this.recipeService.getRecipeById(id).subscribe(rec => recipe = rec);
       recipeName = recipe.name;
       this.recipeImgPath = recipe.imagePath;
       recipeDescription = recipe.description;

@@ -23,9 +23,6 @@ var RecipeSchema = new Schema({
                 type: Number
             }
         }],
-    },
-    id: {
-        type: Number
     }
 });
 

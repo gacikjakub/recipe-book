@@ -10,8 +10,8 @@ const recipesRoutes: Routes = [
     path: '', component: RecipesComponent, children: [
       {path: '', component: SelectRecipeDetailComponent},
       {path: 'new', component: RecipeEditComponent},
-      {path: ':id', component: RecipeDetailComponent},
-      {path: ':id/edit', component: RecipeEditComponent},
+      {path: ':_id', component: RecipeDetailComponent},
+      {path: ':_id/edit', component: RecipeEditComponent},
     ]
   }
 ];
