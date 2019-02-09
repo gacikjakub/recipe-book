@@ -3,7 +3,7 @@ import {NgModule} from '@angular/core';
 import {HomeComponent} from './core/home/home.component';
 import {HttpHeaders} from '@angular/common/http';
 
-export const DATABASE_URL: String = 'http://localhost:3000';
+export const BACKEND_URL: String = 'http://localhost:3000';
 export const httpOptions = {
   headers: new HttpHeaders({
     'Content-Type': 'application/json'

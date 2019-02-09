@@ -1,0 +1,15 @@
+{
+	"name": "Banana Bonkers",
+	"description": "Puree bananas in a blender or food processor. In a gallon pitcher combine pureed bananas, grapefruit juice, lemon sherbet and crushed ice. Stir and serve.",
+	"imagePath": "https://images.media-allrecipes.com/userphotos/250x250/865683.jpg",
+	"ingredients": [
+		{
+			"name": "Banana",
+			"amount": 3
+		},
+		{
+			"name": "Cups fresh grapefruit juice",
+			"amount": 3
+		}
+		]
+}
