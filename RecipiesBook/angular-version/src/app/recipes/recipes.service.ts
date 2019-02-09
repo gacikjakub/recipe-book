@@ -5,24 +5,11 @@ import {ShoppingListService} from '../shopping-list/shopping-list.service';
 import {Observable, Subject} from 'rxjs';
 import {HttpClient} from '@angular/common/http';
 import {DATABASE_URL, httpOptions} from '../app.routing.module';
-import {map} from 'rxjs/operators';
 
 @Injectable({providedIn: 'root'})
 export class RecipesService {
 
   constructor(private shoppingListService: ShoppingListService, private httpClient: HttpClient) {
-  }
-
-  private idGenerator = function* () {
-    let index = 1;
-    while (true) {
-      yield index++;
-    }
-  }();
-
-  private extractData(res: Response) {
-    const body = res;
-    return body || { };
   }
 
   getRecipes(): Observable<any> {
@@ -53,9 +40,5 @@ export class RecipesService {
 
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
     this.shoppingListService.addAllIngredients(ingredients);
-  }
-
-  setRecipes(recipes: Recipe[]) {
-
   }
 }

@@ -13,7 +13,6 @@ export class RecipeEditComponent implements OnInit {
   editMode = false;
   id: string;
   recipeForm: FormGroup;
-  recipeImgPath = '';
   recipe: Recipe;
 
   constructor(private router: Router, private route: ActivatedRoute, private recipeService: RecipesService) {
@@ -66,7 +65,6 @@ export class RecipeEditComponent implements OnInit {
     this.editMode ? this.recipeService.updateRecipe(this.recipeForm.value, this.id) :
       this.recipeService.addRecipe({...this.recipeForm.value});
       console.log({...this.recipeForm.value});
-      console.log()
 
     this.router.navigate(['/recipes']);
   }
