@@ -21,7 +21,7 @@ export class RecipesListComponent implements OnInit {
   }
 
   loadRecipes() {
-    this.recipesService.getRecipes().subscribe(recipes => {
+    this.recipesService.getRecipes().then(recipes => {
       this.recipes = recipes as Recipe[];
     });
   }

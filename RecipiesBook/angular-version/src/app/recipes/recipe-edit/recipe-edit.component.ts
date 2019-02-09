@@ -23,6 +23,13 @@ export class RecipeEditComponent implements OnInit {
       this.id = params['_id'];
       this.editMode = params['_id'] != null;
       console.log('_id: ' + params['_id']);
+
+      this.recipeForm = new FormGroup({
+        'name': new FormControl('', Validators.required),
+        'imagePath': new FormControl('', Validators.required),
+        'description': new FormControl('', Validators.required),
+        'ingredients': new FormArray([]),
+      });
       this.initForm(params['_id']);
     });
   }
@@ -39,13 +46,6 @@ export class RecipeEditComponent implements OnInit {
           'description': new FormControl(recipe.description, Validators.required),
           'ingredients': new FormArray(ingredients),
         });
-      });
-    } else {
-      this.recipeForm = new FormGroup({
-        'name': new FormControl('', Validators.required),
-        'imagePath': new FormControl('', Validators.required),
-        'description': new FormControl('', Validators.required),
-        'ingredients': new FormArray([]),
       });
     }
   }
