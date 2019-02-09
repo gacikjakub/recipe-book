@@ -30,35 +30,42 @@ export class RecipeEditComponent implements OnInit {
 
   private initForm(id: string) {
     if (this.editMode) {
+      console.log('I\'m in edit mode');
       this.recipeService.getRecipeById(id).then(recipe => {
         const ingredients = recipe.ingredients.map(ingredient => this.createIngredientFormGroup(ingredient.name, ingredient.amount));
-        const nameControl = {'name': new FormControl(recipe.name, Validators.required)};
-        const imageURLControl = {'imagePath': new FormControl(recipe.imagePath, Validators.required)};
-        const descriptionControl = {'description': new FormControl(recipe.description, Validators.required)};
-        const ingredientsControl = {'ingredients': new FormArray(ingredients)};
         this.recipeForm = new FormGroup({
-          ...nameControl, ...imageURLControl,
-          ...descriptionControl, ...ingredientsControl
+          'name': new FormControl(recipe.name, Validators.required),
+          'imagePath': new FormControl(recipe.imagePath, Validators.required),
+          'description': new FormControl(recipe.description, Validators.required),
+          'ingredients': new FormArray(ingredients),
         });
+      });
+    } else {
+      this.recipeForm = new FormGroup({
+        'name': new FormControl('', Validators.required),
+        'imagePath': new FormControl('', Validators.required),
+        'description': new FormControl('', Validators.required),
+        'ingredients': new FormArray([]),
       });
     }
   }
 
   getIngredientControls() {
-    return (<FormArray>this.recipeForm.get('ingredients')).controls;
+    // return (<FormArray>this.recipeForm.get('ingredients')).controls;
   }
 
   onIngredientAdded() {
-    (<FormArray>this.recipeForm.get('ingredients')).push(this.createIngredientFormGroup());
+    // (<FormArray>this.recipeForm.get('ingredients')).push(this.createIngredientFormGroup());
   }
   onDeleteIngredient(index: number) {
-    (<FormArray>this.recipeForm.get('ingredients')).removeAt(index);
-    this.recipeForm.markAsDirty();
+    // (<FormArray>this.recipeForm.get('ingredients')).removeAt(index);
+    // this.recipeForm.markAsDirty();
   }
   saveRecipe() {
-    this.editMode ? this.recipeService.updateRecipe(this.recipeForm.value) :
+    this.editMode ? this.recipeService.updateRecipe(this.recipeForm.value, this.id) :
       this.recipeService.addRecipe({...this.recipeForm.value});
       console.log({...this.recipeForm.value});
+      console.log()
 
     this.router.navigate(['/recipes']);
   }

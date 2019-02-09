@@ -40,13 +40,15 @@ export class RecipesService {
   addRecipe(recipe: Recipe) {
     // const newRecipe = {... recipe, ...{id: this.idGenerator.next().value}};
     // this.recipes = [...this.recipes, newRecipe];
+    console.log('BEFORE POST');
+    console.log('recipeName: ' +  recipe.name)
     const response = this.httpClient.post<any>(DATABASE_URL + '/recipes', recipe  , httpOptions);
-    // response.subscribe(res => console.log(res));
+    console.log('AFTER POST');
     return response;
   }
 
-  updateRecipe(recipe: Recipe) {
-    this.httpClient.put<any>(DATABASE_URL + '/recipes/' + recipe._id, recipe, httpOptions);
+  updateRecipe(recipe: Recipe, id: string) {
+    this.httpClient.put<any>(DATABASE_URL + '/recipes/' + id, recipe, httpOptions);
   }
 
   deleteRecipe(id: string) {
