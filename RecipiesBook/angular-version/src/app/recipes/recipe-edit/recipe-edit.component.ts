@@ -14,6 +14,7 @@ export class RecipeEditComponent implements OnInit {
   id: string;
   recipeForm: FormGroup;
   recipeImgPath = '';
+  recipe: Recipe;
 
   constructor(private router: Router, private route: ActivatedRoute, private recipeService: RecipesService) {
   }
@@ -28,30 +29,17 @@ export class RecipeEditComponent implements OnInit {
   }
 
   private initForm(id: string) {
-    let recipeName = '';
-    let recipeDescription = '';
-    let ingredients = [];
-
     if (this.editMode) {
-      let recipe: Recipe;
-      this.recipeService.getRecipeById(id).subscribe(rec => {
-        console.log(rec);
-        recipe = rec as Recipe;
-        recipeName = recipe.name;
-        console.log('recipe: ' + recipeName);
-        this.recipeImgPath = recipe.imagePath;
-        recipeDescription = recipe.description;
-        ingredients = (recipe.ingredients || [])
-          .map(ingredient => this.createIngredientFormGroup(ingredient.name, ingredient.amount));
-      });
-      const nameControl = {'name': new FormControl(recipeName, Validators.required)};
-      const imageURLControl = {'imagePath': new FormControl(this.recipeImgPath, Validators.required)};
-      const descriptionControl = {'description': new FormControl(recipeDescription, Validators.required)};
-      const ingredientsControl = {'ingredients': new FormArray(ingredients)};
-
-      this.recipeForm = new FormGroup({
-        ...nameControl, ...imageURLControl,
-        ...descriptionControl, ...ingredientsControl
+      this.recipeService.getRecipeById(id).then(recipe => {
+        const ingredients = recipe.ingredients.map(ingredient => this.createIngredientFormGroup(ingredient.name, ingredient.amount));
+        const nameControl = {'name': new FormControl(recipe.name, Validators.required)};
+        const imageURLControl = {'imagePath': new FormControl(recipe.imagePath, Validators.required)};
+        const descriptionControl = {'description': new FormControl(recipe.description, Validators.required)};
+        const ingredientsControl = {'ingredients': new FormArray(ingredients)};
+        this.recipeForm = new FormGroup({
+          ...nameControl, ...imageURLControl,
+          ...descriptionControl, ...ingredientsControl
+        });
       });
     }
   }

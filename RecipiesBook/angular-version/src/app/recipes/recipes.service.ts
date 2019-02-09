@@ -31,10 +31,10 @@ export class RecipesService {
     return this.httpClient.get(DATABASE_URL + '/recipes');
   }
 
-  getRecipeById(id: string): Observable<any> {
+  getRecipeById(id: string): Promise<Recipe> {
     // return {...this.recipes.find(recipe => recipe.id === id)};
     console.log('_id: ' + id);
-    return this.httpClient.get(DATABASE_URL + '/recipes/' + id);
+    return <Promise<Recipe>>this.httpClient.get(DATABASE_URL + '/recipes/' + id).toPromise();
   }
 
   addRecipe(recipe: Recipe) {
