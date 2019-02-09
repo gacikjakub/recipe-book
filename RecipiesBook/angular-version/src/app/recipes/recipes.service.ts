@@ -13,14 +13,12 @@ export class RecipesService {
   constructor(private shoppingListService: ShoppingListService, private httpClient: HttpClient) {
   }
 
-  // recipesUpdate = new Subject<Recipe[]>();
   private idGenerator = function* () {
     let index = 1;
     while (true) {
       yield index++;
     }
   }();
-  // private recipes: Recipe[] = [];
 
   private extractData(res: Response) {
     const body = res;
@@ -32,27 +30,25 @@ export class RecipesService {
   }
 
   getRecipeById(id: string): Promise<Recipe> {
-    // return {...this.recipes.find(recipe => recipe.id === id)};
     console.log('_id: ' + id);
     return <Promise<Recipe>>this.httpClient.get(DATABASE_URL + '/recipes/' + id).toPromise();
   }
 
   addRecipe(recipe: Recipe) {
-    // const newRecipe = {... recipe, ...{id: this.idGenerator.next().value}};
-    // this.recipes = [...this.recipes, newRecipe];
     console.log('BEFORE POST');
     console.log('recipeName: ' +  recipe.name)
     const response = this.httpClient.post<any>(DATABASE_URL + '/recipes', recipe  , httpOptions);
     console.log('AFTER POST');
+    response.subscribe(res => console.log(res));
     return response;
   }
 
   updateRecipe(recipe: Recipe, id: string) {
-    this.httpClient.put<any>(DATABASE_URL + '/recipes/' + id, recipe, httpOptions);
+    this.httpClient.put<any>(DATABASE_URL + '/recipes/' + id, recipe, httpOptions).subscribe();
   }
 
   deleteRecipe(id: string) {
-    this.httpClient.delete(DATABASE_URL + '/recipes' + id, httpOptions);
+    this.httpClient.delete(DATABASE_URL + '/recipes/' + id, httpOptions).subscribe();
   }
 
   addIngredientsToShoppingList(ingredients: Ingredient[]) {
@@ -60,7 +56,6 @@ export class RecipesService {
   }
 
   setRecipes(recipes: Recipe[]) {
-    // this.recipes = [...recipes];
-    // this.recipesUpdate.next(this.getRecipes());
+
   }
 }

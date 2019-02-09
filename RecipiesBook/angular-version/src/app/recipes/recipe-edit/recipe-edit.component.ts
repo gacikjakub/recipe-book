@@ -33,6 +33,7 @@ export class RecipeEditComponent implements OnInit {
       console.log('I\'m in edit mode');
       this.recipeService.getRecipeById(id).then(recipe => {
         const ingredients = recipe.ingredients.map(ingredient => this.createIngredientFormGroup(ingredient.name, ingredient.amount));
+        console.log('recipeNAme: ' + recipe.name);
         this.recipeForm = new FormGroup({
           'name': new FormControl(recipe.name, Validators.required),
           'imagePath': new FormControl(recipe.imagePath, Validators.required),
@@ -51,15 +52,15 @@ export class RecipeEditComponent implements OnInit {
   }
 
   getIngredientControls() {
-    // return (<FormArray>this.recipeForm.get('ingredients')).controls;
+    return (<FormArray>this.recipeForm.get('ingredients')).controls;
   }
 
   onIngredientAdded() {
-    // (<FormArray>this.recipeForm.get('ingredients')).push(this.createIngredientFormGroup());
+    (<FormArray>this.recipeForm.get('ingredients')).push(this.createIngredientFormGroup());
   }
   onDeleteIngredient(index: number) {
-    // (<FormArray>this.recipeForm.get('ingredients')).removeAt(index);
-    // this.recipeForm.markAsDirty();
+    (<FormArray>this.recipeForm.get('ingredients')).removeAt(index);
+    this.recipeForm.markAsDirty();
   }
   saveRecipe() {
     this.editMode ? this.recipeService.updateRecipe(this.recipeForm.value, this.id) :
